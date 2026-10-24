@@ -1,7 +1,5 @@
 # Dataset profile
 
-# Dataset profile
-
 ## Task 5 · Find a dataset
 
 ### Where I searched
