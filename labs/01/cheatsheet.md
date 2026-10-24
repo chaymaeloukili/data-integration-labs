@@ -5,7 +5,7 @@ A reference for Markdown. Each entry shows what the feature does, the Markdown s
 - **CommonMark**: works in the [CommonMark dingus](https://spec.commonmark.org/dingus/) and on GitHub
 - **GitHub**: works on GitHub only
 
-Labels tested on: [date]
+Labels tested on: 24.10.2026
 
 ## Contents
 
@@ -295,7 +295,7 @@ ls -l
 
 ### Collapsed section
 
-**[label after testing]** · The HTML tags `<details>` and `<summary>` create a section that opens on click.
+**CommonMark** · The HTML tags `<details>` and `<summary>` create a section that opens on click.
 
 ```markdown
 <details>
@@ -353,7 +353,7 @@ A sentence with a footnote.[^1]
 
 ### @mentions and issue references
 
-**GitHub** · `@username` links a person, `#1` links issue number 1. [Note where they become links: in a file, in an issue comment, or both.]
+**GitHub** · `@username` links a person, `#1` links issue number 1. They become links in issue comments, not in this file.
 
 ```markdown
 Thanks @octocat, see #1.
