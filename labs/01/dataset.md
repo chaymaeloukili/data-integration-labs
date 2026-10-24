@@ -111,4 +111,61 @@ The dataset contains no personal data: it only has totals for all of Germany per
 2. Add a data dictionary that describes every column, with type and unit.
 3. Put the licence in a `LICENSE` file and in the metadata, and use standard codes (ISO 8601 dates, ISO 3166 country codes).
 
-## Task 8 · Plan what to combine it withan what to combine it with
+## Task 8 · Plan what to combine it with
+
+### Second source
+
+**[Das Kinojahr](https://www.ffa.de/broschueren.html)** by the FFA Filmförderungsanstalt: yearly reports with cinema tickets, revenue and average ticket price for Germany, 2000–2025 (PDF). Each report has a table "Kino- und Filmergebnisse" with the last five years, e.g. [Das Kinojahr 2025](https://www.ffa.de/files/dokumentenverwaltung/publikationen%20presse%20%28bearbeitet%20HS%29/2025/FFA-Kinojahr_2025.pdf), page 6, for 2021–2025.
+
+**Licence:** no open licence. The FFA website says its content is protected by copyright ("urheberrechtlich geschützt", [Impressum](https://www.ffa.de/impressum.html)), and the reports say nothing about reuse. Our lecturer allowed us to use the figures for the project; we have also asked the FFA for permission (22.10.2026, no answer yet).
+
+### Shared key
+
+Both sources share the **year**, but write it differently:
+
+| Source | The year as published | Value | After cleaning |
+|---|---|---|---|
+| Destatis 12411-0003 (table CSV) | `31.12.2023` | 83,456,045 inhabitants | `2023` |
+| Destatis 12411-0003 (flat CSV) | `2023-12-31` | 83,456,045 inhabitants | `2023` |
+| FFA, Das Kinojahr 2025, p. 6 | column header `2023` | `95,7 Mio.` tickets | `2023`, 95,700,000 |
+| Destatis 12411-0003 | `31.12.2025` | 83,467,117 inhabitants | `2025` |
+| FFA, Das Kinojahr 2025, p. 6 | column header `2025` | `91,9 Mio.` tickets | `2025`, 91,900,000 |
+
+They do not match as published. Before joining, I must take the year out of the Destatis date, copy the FFA figures out of the PDF and turn `95,7 Mio.` into a number (decimal comma, unit "Mio.").
+
+**Something I noticed:** the FFA table also lists inhabitants, but its numbers differ from Destatis 12411-0003 (2023: 84,607,016 at the FFA vs. 83,456,045 at Destatis). According to its footnote, the FFA uses a different reference date and the census 2022 revision. We will use the Destatis numbers, so that all years have the same basis, and document the difference.
+
+### Granularity
+
+Both sources have one value per year for all of Germany, so the level of detail matches. But they measure different things: tickets are a **total over the whole year**, population is a **count on one day** (31 December). We will use the population on 31 December of the same year. The FFA rounds tickets to 0.1 million. Because Destatis counts only West Germany until 1989, we will start in 2000.
+
+### Questions
+
+1. How did cinema tickets per person develop in Germany from 2000 to 2025, especially after the start of large streaming services (2014) and after the COVID-19 closures (2020/21)?
+2. Did tickets per person return to the level before COVID-19 (2019) by 2025, given that the population grew?
+3. How much does the FFA's own figure "tickets per inhabitant" differ from the figure we calculate with Destatis population data?
+
+### Licences
+
+Destatis data is under the Datenlizenz Deutschland – Namensnennung 2.0: we may combine and publish it if we credit Destatis, link the dataset and say that we changed it. The FFA figures have no open licence, so we may use them with our lecturer's permission, but we can only publish a combined table openly once the FFA agrees. In any case we must credit both sources:
+
+- „Bevölkerung: Deutschland, Stichtag, Geschlecht (12411-0003)“, Statistisches Bundesamt (Destatis), [GENESIS-Online](https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-0003), [dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0). Data changed: filtered to 2000–2025, total only.
+- „Das Kinojahr“ 2000–2025, FFA Filmförderungsanstalt, [ffa.de](https://www.ffa.de/broschueren.html), used with permission of our lecturer; permission of the FFA requested.
+
+### Next steps
+
+```mermaid
+flowchart TD
+    A[Download Destatis flat CSV] --> B[Keep total rows, years 2000–2025]
+    B --> C[Take year from date]
+    D[Download FFA Kinojahr PDFs] --> E[Copy tickets per year into a table]
+    E --> F[Turn '95,7 Mio.' into numbers]
+    C --> G[Join on year]
+    F --> G
+    G --> H[Calculate tickets per person]
+    H --> I[Check against FFA figures, document differences]
+```
+
+### Verdict
+
+Yes, I would build our project on this dataset: Destatis population data is open, reliable and easy to join on the year, and it turns ticket totals into a fair comparison per person. On its own it says nothing about cinemas, so the project depends on the FFA ticket figures. The biggest risk is the FFA data: it is only available as PDF, so we have to copy it by hand, and it has no open licence.
