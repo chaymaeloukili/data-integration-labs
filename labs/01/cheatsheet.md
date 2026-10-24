@@ -401,6 +401,6 @@ $$
 
 ## Pitfalls
 
-1. [What did not work as expected, and how I fixed it]
-2. [...]
-3. [...]
+1. **Strikethrough and task lists show as plain text in the dingus.** `~~` and `[x]` are GitHub extensions, not part of CommonMark. Fix: label them GitHub.
+2. **Links to sections do not jump in the dingus.** Only GitHub creates anchors for headings. Fix: test section links on GitHub.
+3. **@mentions are not linked in a file.** They only become links in issues and comments. Fix: test them in an issue.
