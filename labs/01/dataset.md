@@ -63,6 +63,7 @@ I downloaded both CSV files and opened them in Microsoft Excel.
 - Each value has a quality flag; all flags are `e`.
 - **Breaks in the series:** until 1989 the numbers cover only West Germany ("Bis 1989: Früheres Bundesgebiet"), so the total jumps from 62.7 million (1989) to 79.8 million (1990). After the census 2011 the total drops from 81.8 million (2010) to 80.3 million (2011); the census 2022 also changes the basis.
 - male + female = total in every row.
+- When I opened the table CSV in Excel, it turned the dates into Excel dates and showed only two digits for the year (`31.12.25`).
 
 ### Data dictionary (flat CSV)
 
@@ -90,4 +91,24 @@ The dataset contains no personal data: it only has totals for all of Germany per
 
 ## Task 7 · FAIR review
 
-## Task 8 · Plan what to combine it with
+| Principle | Rating | Evidence |
+|---|---|---|
+| F1 | ~ | A stable table code (`12411-0003`) and a stable URL on [GENESIS-Online](https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-0003), but no DOI |
+| F2 | ~ | Title, publisher and date ("Stand: 22.10.2026") are given, and the [statistic page](https://genesis.destatis.de/datenbank/online/statistic/12411/details) describes the statistic; I found no keywords |
+| F4 | ✓ | Indexed in the GENESIS-Online search (I found it with "Fortschreibung des Bevölkerungsstandes") and listed in the [Geodatenkatalog](https://gdk.gdi-de.org/geonetwork/srv/api/records/30303031-3234-4031-312d-303030330002) |
+| A1 | ✓ | Downloaded over HTTPS in the browser, without a login |
+| I1 | ✓ | CSV, an open and machine-readable format |
+| I2, I3 | ~ | The flat CSV uses ISO 8601 dates (`1970-12-31`), but Germany is coded as `DG`, not ISO 3166 (`DE`); the file does not link to related data or to its sources |
+| R1 | ~ | The [statistic page](https://genesis.destatis.de/datenbank/online/statistic/12411/details) has a detailed method description (who is counted, census as basis, updates from registration offices), and the footnotes explain the breaks, but there is no description of each column |
+| R1.1 | ~ | The licence is clear (GENESIS imprint) and appears in the catalogue record ("Datenlizenz by-2-0"), but not in the downloaded file itself, which only says "© Statistisches Bundesamt (Destatis), 2026" |
+| R1.2 | ✓ | Destatis is the original publisher. The method description explains the provenance: the census (2022) is the basis, updated with data from registration offices (moves) and registry offices (births and deaths) |
+| R1.3 | ~ | The metadata is harvested into a catalogue, but I could not check whether it follows DCAT-AP |
+
+**Is it FAIR, open, or both?** The dataset is **open**: it is under a licence that conforms to the Open Definition and can be downloaded without a login. It is **partly FAIR**: it is easy to find and access and machine-readable, but it has no DOI, uses its own codes instead of standard ones, and the licence is not in the file itself.
+
+**Three things I will do better when I publish our dataset for milestone 2:**
+1. Give it a persistent identifier, e.g. a DOI via [Zenodo](https://zenodo.org).
+2. Add a data dictionary that describes every column, with type and unit.
+3. Put the licence in a `LICENSE` file and in the metadata, and use standard codes (ISO 8601 dates, ISO 3166 country codes).
+
+## Task 8 · Plan what to combine it withan what to combine it with
