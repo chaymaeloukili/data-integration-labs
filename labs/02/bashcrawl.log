@@ -1,0 +1,150 @@
+   23  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   24  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   25  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   26  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   27  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   28  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   29  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   30  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   31  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   32  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   33  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   34  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   35  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   36  /usr/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Data and Culture/Gucci 1996 Fall Tom Ford/import cv2 # Lädt das Tool zum Bilder-Le.py"
+   37  /usr/bin/python3 Untitled-1
+   38  /usr/bin/python3 Untitled-1
+   39  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   40  sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
+   41  sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
+   42  sudo docker pull mcr.microsoft.com/mssql/server:2022-latest
+   43  sudo docker run -e "ACCEPT_EULA=Y" -e "DatenbankSS26 -e "MSSQL_PID=Developer" -p 1433:1433 --name cloukili -d mcr.microsoft.com/mssql/server:2022-latest\n\nsudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=DatenbankSS26\!" -e "MSSQL_PID=Developer" -p 1433:1433 --name HIER_NAME_EINSETZEN -d mcr.microsoft.com/mssql/server:2022-latest\nsudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=DatenbankSS26\!" -e "MSSQL_PID=Developer" -p 1433:1433 --name cloukili -d mcr.microsoft.com/mssql/server:2022-latest
+   44  sudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=DatenbankSS26 -e "MSSQL_PID=Developer" -p 1433:1433 --name cloukili -d mcr.microsoft.com/mssql/server:2022-latest
+   45  sudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=DatenbankSS26 -e "MSSQL_PID=Developer" -p 1433:1433 --name cloukili -d mcr.microsoft.com/mssql/server:2022-latest
+   46  sudo docker run -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD=DatenbankSS26! -e MSSQL_PID=Developer -p 1433:1433 --name cloukili -d mcr.microsoft.com/mssql/server:2022-latest
+   47  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   48  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   49  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   50  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   51  /usr/bin/python3 Untitled-1
+   52  /usr/bin/python3 Untitled-1
+   53  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/DIS2.1/DIS2.1.py"
+   54  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/DIS2.1/DIS2.1.py"
+   55   source "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/DIS2.1/.venv/bin/activate"
+   56  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/print('Hi').py"
+   57  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/print('Hi').py"
+   58  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/print('Hi').py"
+   59  claer
+   60  clear
+   61  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/print('Hi').py"
+   62  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   63  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   64  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   65  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   66  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   67  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/DIS2.1/DIS21 20260421 Übung Lösung.py"
+   68  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/DIS2.1/Übung1.py"
+   69  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   70  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+   71  cd ~/cs50-python\ngit add -A\ngit -c user.name="chaymaeloukili" -c user.email="c.loukili01@gmail.com" commit -m "Erster Commit"\ngit branch -M main\ngit remote remove origin 2>/dev/null\ngit remote add origin https://github.com/chaymaeloukili/cs50-python.git\ngit push -u origin main
+   72  git push -u origin main
+   73  /usr/local/bin/python3
+   74  cd indoor
+   75  python indoor.py
+   76  exit()\nexit()
+   77  python indoor.py
+   78  check50 cs50/problems/2022/python/indoor
+   79  check50 cs50/problems/2022/python/indoor
+   80  printf "protocol=https\nhost=github.com\n\n" | git credential-osxkeychain erase
+   81  check50 cs50/problems/2022/python/indoor
+   82  python3 --version
+   83  pip install check50 submit50
+   84  mkdir indoor\n   cd indoor\n   code indoor.py
+   85  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/3. Semester [WS 2026:2027]/DIS3.1/huffman_tabelle.py"
+   86  python len_codierungen.py
+   87  python len_codierungen.py
+   88  /usr/local/bin/python3 "/Users/chaymaeloukili/Library/Mobile Documents/com~apple~CloudDocs/Uni/3. Semester [WS 2026:2027]/DIS3.1/len_codierungen.py"
+   89  pwd
+   90  ls
+   91  git remote -v
+   92  git config --global user.name "chaymaeloukili"
+   93  git config --global user.email "311860801+chaymaeloukili@users.noreply.github.com"
+   94  git reset -- .DS_Store data/.DS_Store data/raw/.DS_Store
+   95  echo ".DS_Store" >> .gitignore
+   96  git add .gitignore
+   97  git status
+   98  git pull
+   99  git status
+  100  git pull
+  101  git status
+  102  git status
+  103  git pull
+  104  git status
+  105  pip install -r requirements.txt
+  106  pip install -r requirements.txt
+  107  pip install "pandas<3"
+  108  git status\ngit log origin/main..main
+  109  git pull
+  110  git status
+  111  ps aux | grep sleep
+  112  kill 36029
+  113  echo $0
+  114  zsh --version
+  115  cd ~
+  116  pwd
+  117  cd ~/Downloads
+  118  pwd
+  119  echo $PATH | tr ':' '\n'
+  120  echo $PATH | tr ':' '\n' | wc -l
+  121  which curl python3 git
+  122  git --version
+  123  df -h ~
+  124  du -sh ~/Downloads
+  125  sleep 600
+  126  cd Lab2
+  127  cd ~/DIS3.3_Lab/Lab2
+  128  pwd
+  129  curl -L _O
+  130  curl -L -O
+  131  curl -L -O
+  132  curl -L -O https://gitlab.com/slackermedia/bashcrawl/-/archive/master/bashcrawl-master.zip 
+  133  unzip -q bashcrawl-master.zip
+  134  cd bashcrawl-master/entrance
+  135  cat scroll
+  136  ls
+  137  cd cellar
+  138  ls
+  139  cat scroll
+  140  alias ls='ls -F'
+  141  ls
+  142  ./treasure
+  143  cd armoury
+  144  ls
+  145  cat scroll
+  146  cd ..
+  147  ./treasure
+  148  cd armoury
+  149  ls
+  150  ./treasure
+  151  export I=sword,$I
+  152  ./potion
+  153  export HP=15
+  154  cd ../../vault/stronghold/nursery/lab
+  155  cat scroll
+  156  ln -s ../../../../.rift portal
+  157  cd portal
+  158  ls
+  159  ./box
+  160  ./armour
+  161  cd arena/pit
+  162  ls -l
+  163  echo $I
+  164  echo $HP
+  165  mv drum wizard-dark
+  166  history 1 > ~/DIS3.3_Lab/Lab2/history.txt
+  167  ./nyarlathotep
+  168  cat end
+  169  ./treasure
+  170  ./platinum
+  171  export I=hair,bracelet,$I
+  172  echo $I
