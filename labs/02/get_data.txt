@@ -1,0 +1,12 @@
+== Size
+-rw-r--r--@ 1 chaymaeloukili  staff   1.8K Nov  5 18:32 data/raw/koeln_2022.csv
+== Type
+data/raw/koeln_2022.csv: ISO-8859 text, with CRLF line terminators
+== Lines
+      13
+== Columns
+      18
+== First lines
+;Deutzer Brücke;Hohenzollernbrücke;Neumarkt;Zülpicher Straße;Bonner Straße;Venloer Straße;Vorgebirgswall;Universitäts-straße;A.-Schütte-Allee;Vorgebirgspark;A.-Silbermann-Weg;Stadtwald;Niederländer Ufer;Rodenkirchener Brücke;Severinsbrücke;Hohe Pforte;Neusser Straße
+Januar;88.423;52.307;84.708;104.967;63.658;124.574;68.031;110.382;31.190;20.023;56.228;41.373;40.526;26.768;35.063;75.195;71.848
+Februar;83.211;48.554;78.712;91.977;58.148;114.010;67.684;100.106;30.866;19.455;51.551;40.836;38.006;27.172;32.770;69.824;67.443
