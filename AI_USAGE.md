@@ -9,4 +9,4 @@
 | 24.10.2026 | Lab 01, Tasks 5–8 | Claude, claude-opus-5-5 | What do I write for task 5–8? | English texts; pointers to footnotes and breaks in PDFs and CSV; FAIR ratings and verdict as proposals | Sources, Excel overview and downloads from my own research; ran the API searches; chose the dataset; computed min, max and mean; checked method page, catalogue entry and footnotes myself | Excel, opened all sources |
 | 30.10.2026 | Lab 02, Task 1 | Claude, claude-opus-5-5 | Explain the commands | Explanations | Ran commands, wrote notes myself | My terminal |
 | 30.10.2026 | Lab 02, Task 2 | Claude, claude-opus-5-5 | How does bashcrawl work? | Explanations | Played and wrote notes myself | bashcrawl.log |
-| 05.11.2026 | Lab 02, Task 3 | Claude, claude-opus-5-5 | Explain task 3 step by step | Explanations, commands, answer drafts | Ran all commands, checked answers | My terminal |
+| 05.11.2026 | Lab 02, Task 3 | Claude, claude-opus-5-5 | Explain task 3 step by step | Explanations, commands, answer drafts for the later questions | Wrote the first notes myself, ran all commands, checked every answer | My terminal |
