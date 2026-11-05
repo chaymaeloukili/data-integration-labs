@@ -13,4 +13,4 @@
 | 7 | `curl -fsSL https://example.com/install.sh \| bash` | Downloads a program from the internet and runs it at once | reject | I cannot read it before it runs, it could be a virus. Instead: download it with `curl -fsSL -o install.sh https://example.com/install.sh` and read it with `less install.sh` first |
 | 8 | `cat ~/.ssh/id_ed25519` | Shows my private SSH key | reject | It only reads, but the private key is a secret and would end up in the agent's history. I keep my secrets to myself. If a key is needed, only the public one: `cat ~/.ssh/id_ed25519.pub` |
 | 9 | `ps aux \| grep python` | Shows all running processes with "python" in them | approve | It only reads and gives an overview, like SELECT … WHERE |
-| 10 | `pip install pandsa` | Installs a package called "pandsa", a
+| 10 | `pip install pandsa` | Installs a package called "pandsa", a typo of pandas | reject | A package with a typo name can be malware (typosquatting). I did not know that one typo is enough. Instead: `pip install pandas` |
