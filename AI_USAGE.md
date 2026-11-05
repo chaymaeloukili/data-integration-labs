@@ -11,3 +11,4 @@
 | 30.10.2026 | Lab 02, Task 2 | Claude, claude-opus-5-5 | How does bashcrawl work? | Explanations | Played and wrote notes myself | bashcrawl.log |
 | 05.11.2026 | Lab 02, Task 3 | Claude, claude-opus-5-5 | Explain task 3 step by step | Explanations, commands, answer drafts for the later questions | Wrote the first notes myself, ran all commands, checked every answer | My terminal |
 | 05.11.2026 | Lab 02, Task 4 | Claude, claude-opus-5-5 | Help with get_data.sh | Script draft, explanations, fix for tr (LC_ALL=C) | Tested the Destatis download and API myself, found the Cologne link with the API, ran and checked the script | Ran it several times, checked SOURCES.txt and the output |
+| 05.11.2026 | Lab 02, Task 5 | Claude, claude-opus-5-5 | Go through the ten commands with me | Explanations of the commands, English wording of my answers | Made every decision and gave the reasons myself | Discussed each command, compared with tasks 1–4 |
