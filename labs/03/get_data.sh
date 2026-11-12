@@ -36,3 +36,5 @@ head -n 3 "$TARGET" | iconv -f ISO-8859-1 -t UTF-8
 # script downloads the Cologne bike counts 2022 (13 lines = header + 12 months,
 # 18 columns = month + 17 counting stations). The file is ISO-8859-1, not UTF-8,
 # so tr needs LC_ALL=C and the first lines are converted with iconv.
+
+echo "== Checksum"; git hash-object --no-filters "$TARGET"
