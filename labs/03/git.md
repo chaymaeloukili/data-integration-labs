@@ -108,3 +108,33 @@ nothing to commit, working tree clean
 ```
 
 Before the push, my computer had 1 commit that GitHub did not have yet. After the push, both are at the same state. My avatar is shown next to the commit on GitHub, because the commit carries my `noreply` address.
+
+
+## Step by step
+
+```
+$ git log --oneline -- .
+3c38b4d Explain how to rebuild the data
+9e1dc27 Print a checksum of the downloaded file
+de14aca Explain where to run the script and where the data goes
+25333de Ignore downloaded raw data
+5c6a0d9 Copy the download script from lab 2
+bb5c87d Answer setup questions for lab 3, task 2
+58305b5 Add commit graph predictions and screenshot (lab 3, task 1)
+70b96cd Delete labs/03
+fb9bb11 Create 03
+
+$ git status --ignored
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+	data/
+
+nothing to commit, working tree clean
+```
+
+**Why does the `.gitignore` belong in the repository, but `data/raw/` does not?** The `.gitignore` is a small text file with a rule. Everyone who clones the repository needs this rule, so that nobody commits the raw data by mistake. `data/raw/` contains downloaded data: it can be large, it can change at the source, and it can be rebuilt at any time with `get_data.sh`. Git is made for text that people write, like scripts and notes, not for data that a script downloads.
+
+**What does a teammate need to get my raw data?** They clone the repository and run `./get_data.sh` in `labs/03`, as described in `labs/03/README.md`. The script stores the source in `data/raw/SOURCES.txt` and prints a checksum, so they can check if they got the same file as me.
