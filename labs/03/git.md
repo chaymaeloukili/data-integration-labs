@@ -138,3 +138,71 @@ nothing to commit, working tree clean
 **Why does the `.gitignore` belong in the repository, but `data/raw/` does not?** The `.gitignore` is a small text file with a rule. Everyone who clones the repository needs this rule, so that nobody commits the raw data by mistake. `data/raw/` contains downloaded data: it can be large, it can change at the source, and it can be rebuilt at any time with `get_data.sh`. Git is made for text that people write, like scripts and notes, not for data that a script downloads.
 
 **What does a teammate need to get my raw data?** They clone the repository and run `./get_data.sh` in `labs/03`, as described in `labs/03/README.md`. The script stores the source in `data/raw/SOURCES.txt` and prints a checksum, so they can check if they got the same file as me.
+
+
+## Undo
+
+### 1. Deleted by accident
+
+```
+$ rm get_data.sh
+$ git status
+Changes not staged for commit:
+        deleted:    get_data.sh
+
+$ git restore get_data.sh
+$ git status
+nothing to commit, working tree clean
+```
+
+`git restore` brought the script back from the last commit. Git can only bring back what is in a commit: it could not have saved the raw data in `data/raw/` (ignored, but I can download it again), new files that were never committed, or changes since the last commit.
+
+### 2. Staged by accident
+
+```
+$ echo "my private notes" > notes.txt
+$ git add .
+$ git status
+Changes to be committed:
+        new file:   notes.txt
+
+$ git restore --staged notes.txt
+$ git status
+Untracked files:
+        notes.txt
+
+$ rm notes.txt
+```
+
+`git add .` staged everything in the folder, also `notes.txt`. `git restore --staged` only took it out of the staging area: the file was still there, untracked, until I deleted it with `rm`.
+
+### 3. A typo in the message
+
+```
+$ git commit -m "Add a note abot the downlaod time"
+[main ac5a48b] Add a note abot the downlaod time
+
+$ git commit --amend -m "Add a note about the download time"
+[main d874bdb] Add a note about the download time
+```
+
+The hash changed from `ac5a48b` to `d874bdb`, because the hash is computed from everything in the commit, also the message. `--amend` replaces the commit with a new one. That is safe only before I push: after a push, GitHub and my team would still have the old commit, and the histories would no longer match.
+
+### 4. A bad commit, already pushed
+
+```
+$ git commit -m "Change the download year"
+$ git push
+$ ./get_data.sh
+curl: (22) The requested URL returned error: 404
+
+$ git revert --no-edit HEAD
+$ ./get_data.sh
+$ git push
+$ git log --oneline -3
+e62c183 (HEAD -> main, origin/main, origin/HEAD) Revert "Change the download year"
+f0af788 Change the download year
+d874bdb Add a note about the download time
+```
+
+I changed the year in the URL to 2099, so the download failed with 404. `git revert` added a new commit that undoes the bad one, and the script works again. Both commits stay in the history. `git revert` is the right command here, because the bad commit was already pushed: it only adds a commit and does not change the history. `git reset --hard HEAD~1` would delete the commit on my computer, but not on GitHub, and my next push would be rejected.
