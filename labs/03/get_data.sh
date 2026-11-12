@@ -12,7 +12,7 @@
 # Attribution from lab 1: "Bevölkerung: Deutschland, Stichtag, Geschlecht (12411-0003)",
 # Statistisches Bundesamt (Destatis), GENESIS-Online, Datenlizenz Deutschland – Namensnennung – Version 2.0.
 
-URL="https://www.offenedaten-koeln.de/sites/default/files/distribution/Radverkehr%2520f%25C3%25BCr%2520Offene%2520Daten%2520K%25C3%25B6ln%25202029.csv"
+URL="https://www.offenedaten-koeln.de/sites/default/files/distribution/Radverkehr%2520f%25C3%25BCr%2520Offene%2520Daten%2520K%25C3%25B6ln%25202022.csv"
 TARGET="data/raw/koeln_2022.csv"
 
 mkdir -p data/raw
