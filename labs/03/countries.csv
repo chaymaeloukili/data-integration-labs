@@ -1,6 +1,6 @@
-name,iso3,iso2
-Czech Republic,CZE,CZ
-Germany,DEU,DE
-Macedonia,MKD,MK
-Swaziland,SWZ,SZ
-Turkey,TUR,TR
+name,iso3,iso2,numeric
+Czech Republic,CZE,CZ,203
+Germany,DEU,DE,276
+Macedonia,MKD,MK,807
+Swaziland,SWZ,SZ,748
+Turkey,TUR,TR,792
