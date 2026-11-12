@@ -21,3 +21,6 @@ The script creates `data/raw/`, downloads the file `koeln_2022.csv`, adds a line
 **Source:** "Fahrrad-Verkehrsdaten Köln 2022", Stadt Köln, [Offene Daten Köln](https://www.offenedaten-koeln.de/dataset/fahrrad-verkehrsdaten-koeln-2022)
 
 **Licence:** [Datenlizenz Deutschland – Zero – Version 2.0](https://www.govdata.de/dl-de/zero-2-0)
+
+
+The download takes only a few seconds, because the file is small (about 2 KB).
