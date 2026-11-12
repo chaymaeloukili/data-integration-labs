@@ -1,6 +1,6 @@
 #!/bin/bash
 # get_data.sh downloads the bike counts of Cologne 2022 and takes a first look at them.
-# How to run: ./get_data.sh   (or: ./get_data.sh > get_data.txt)
+# How to run: cd labs/03 && ./get_data.sh  (the data goes to data/raw/, which Git ignores)
 #
 # Source: "Fahrrad-Verkehrsdaten Köln 2022", Stadt Köln, Offene Daten Köln,
 #         https://www.offenedaten-koeln.de/dataset/fahrrad-verkehrsdaten-koeln-2022
