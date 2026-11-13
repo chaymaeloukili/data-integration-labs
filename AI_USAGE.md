@@ -16,3 +16,7 @@
 | 12.11.2026 | Lab 03, Tasks 3–4 | Claude, claude-opus-5-5 | Step by step for committing, .gitignore and undo | Explanations, commands, drafts of README.md and of the sections "Step by step" and "Undo" in git.md | Ran every command myself, made the changes and commits myself, broke and rescued the script myself | My terminal, git status, git log and GitHub |
 | 12.11.2026 | Lab 03, Tasks 5–6 | Claude, claude-opus-5-5 | Step by step for branches, merge conflict and dataset history | Explanations, commands, drafts of conflict.md and history.md | Made the branches, merged and resolved the conflict, cloned co2-ppm, ran the commands and searched the issue on GitHub myself | My terminal, git log and GitHub |
 | 12.11.2026 | Lab 03, Task 7 | Claude, claude-opus-5-5 | Step by step for issues, pull requests, review and merge | Explanations, the idea for the two README sections, draft of team.md | Opened the issue and pull request, reviewed and approved Ülkü's pull request and merged mine myself | GitHub and git log in the team repository |
+## Lab 04 – Task 1
+- Tool: Claude
+- Used for: understanding the Copilot settings and the test results. Help with the text for setup.md.
+- I did the tests in VS Code myself and checked the results.
