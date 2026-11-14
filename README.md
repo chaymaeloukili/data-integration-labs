@@ -12,6 +12,9 @@ This repository collects my lab work for the module DIS 3.3 Data Integration at 
 | No. | Topic | Folder |
 |---|---|---|
 | 01 | Open Source Software and Open Data | [labs/01/](labs/01/) |
+| 02 | Command Line Interface | [labs/02/](labs/02/) |
+| 03 | Version Control Software | [labs/03/](labs/03/) |
+| 04 | Agentic Coding | [labs/04/](labs/04/) |
 
 ## Licence
 
